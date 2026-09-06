@@ -1,44 +1,59 @@
-# AudioBook
+A lightweight desktop application that turns any `.txt` file into spoken audio, built with Python, Tkinter, and `pyttsx3`.
 
-A simple Python GUI application that converts text from a `.txt` file into speech using `pyttsx3`.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Notes](#notes)
+- [License](#license)
+
+## Overview
+AudioBook is a simple GUI tool that loads a plain text file, displays its contents in an editor pane, and reads it aloud using offline text-to-speech — no internet connection or API key required.
 
 ## Features
+- 📂 Open and load any `.txt` file
+- 📝 View the loaded text in a built-in editor pane
+- 🔈 Convert text to speech and play it aloud with one click
+- 🖥️ Minimal, distraction-free Tkinter interface
 
-- Open a plain text (`.txt`) file
-- Display the loaded text in a text editor area
-- Play the text out loud using text-to-speech
-- Simple and minimal Tkinter-based interface
-
-## Requirements
-
-- Python 3.7 or newer
-- `tkinter` (included with most Python installations)
-- `pyttsx3`
+## Tech Stack
+| Component | Technology |
+|---|---|
+| Language | Python 3 |
+| GUI | Tkinter |
+| Text-to-Speech | pyttsx3 (offline TTS engine) |
 
 ## Installation
-
-1. Clone or download this repository.
-2. Install the Python dependency:
-
 ```bash
+git clone https://github.com/Emmanuel-Fasina/AudioBook.git
+cd AudioBook
 pip install pyttsx3
 ```
 
 ## Usage
-
-Run the application with:
-
 ```bash
-python my_audiobook.py
+python main.py
+```
+1. Click **Open Text File** and select a `.txt` file.
+2. The contents load into the text box automatically.
+3. Click **Play Audio** to hear the text read aloud.
+
+## Project Structure
+```
+AudioBook/
+├── main.py       # Application logic and GUI
+└── README.md     # Project documentation
 ```
 
-Then:
-
-1. Click `Open Text File` to choose a `.txt` file.
-2. The file contents will appear in the text box.
-3. Click `Play Audio` to hear the text read aloud.
-
 ## Notes
+- Only `.txt` files are currently supported.
+- Attempting to play with an empty text box triggers a warning dialog.
 
-- If the text box is empty, the app shows a warning message.
-- The application currently supports only `.txt` files.
+## License
+This project was built for educational purposes.
+
+---
+Built by [Emmanuel Fasina](https://github.com/Emmanuel-Fasina)
