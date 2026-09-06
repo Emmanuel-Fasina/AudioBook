@@ -11,13 +11,13 @@ A lightweight desktop application that turns any `.txt` file into spoken audio, 
 - [License](#license)
 
 ## Overview
-AudioBook is a simple GUI tool that loads a plain text file, displays its contents in an editor pane, and reads it aloud using offline text-to-speech — no internet connection or API key required.
+The AudioBook application is a simple GUI interface that loads a plain text file, displays its contents in an editor pane, and reads it aloud using offline text-to-speech library.
 
 ## Features
 - 📂 Open and load any `.txt` file
 - 📝 View the loaded text in a built-in editor pane
 - 🔈 Convert text to speech and play it aloud with one click
-- 🖥️ Minimal, distraction-free Tkinter interface
+- 🖥️ Tkinter interface for the user experience
 
 ## Tech Stack
 | Component | Technology |
@@ -53,7 +53,7 @@ AudioBook/
 - Attempting to play with an empty text box triggers a warning dialog.
 
 ## License
-This project was built for educational purposes.
+This project was built for educational and learning purposes.
 
 ---
 Built by [Emmanuel Fasina](https://github.com/Emmanuel-Fasina)
